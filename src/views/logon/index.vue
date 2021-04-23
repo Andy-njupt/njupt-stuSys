@@ -58,6 +58,8 @@ export default {
           } catch (error) {
             this.$toast({ msg: error, type: 'fail' });
           }
+        } else {
+          this.$toast({ msg: '密码不一致', type: 'fail' });
         }
       }
     },
@@ -65,7 +67,7 @@ export default {
 };
 </script>
 
-<!-- @import css-loader, style-loader, vue-loader -->
+<!-- @import css-loader, style-loader, 利用vue-loader -->
 <style scoped src="../login/index.css">
 /* @import url(../login/index.css); */
 </style>

@@ -34,7 +34,8 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    async getStuList({ commit, state }, page) {
+    async getStuList({ commit, state }, page) { // {commit.state}是Action 函数接受一个与 store
+      // 实例具有相同方法和属性的 context 对象
       const { data: { cont: count, findByPage: list } } = await api.getStu(page, state.size);
       commit('setStuList', list);
       commit('setTotalPage', count);

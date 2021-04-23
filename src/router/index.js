@@ -44,7 +44,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'history', // vue-router模型是hash模式
   base: process.env.BASE_URL,
   routes,
   linkExactActiveClass: 'active', // 精准匹配

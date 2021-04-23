@@ -6,7 +6,7 @@ import api from './api';
 import Cookie from './util/cookie';
 import showToast from './util/Toast';
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false;// 组织启动生产消息
 // 把一些方法绑定到vue原型上
 Vue.prototype.$api = api;
 Vue.prototype.$cookie = Cookie;

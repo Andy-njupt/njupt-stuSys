@@ -1,7 +1,7 @@
 import axios from 'axios';
 import URL from './URL';
 
-const appkey = 'Q_A_Q_1590927055348';
+const appkey = 'andy_1602658532786';
 
 const ajax = axios.create({
   baseURL: URL.baseURL,
@@ -10,7 +10,7 @@ const ajax = axios.create({
   },
 });
 
-// 请求拦截器，在发送请求之前对数据做一些处理
+// 响应拦截器，在得到响应之前对数据做一些处理
 ajax.interceptors.response.use((data) => {
   const newData = data.data;
   if (newData.status === 'success') {

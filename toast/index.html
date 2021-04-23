@@ -68,6 +68,7 @@
     // btn.onclick = 
     function showToast (type, msg) {
       var app = new Vue({
+        //el也可以这样写
         el: document.createElement('div'),
         template: `<div v-if="exist"
                    class="toast-wrapper"
